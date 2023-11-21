@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import { MongoClient } from "mongodb";
 dotenv.config();
-const connectionString = process.env.ATLAS_URI || "";
+const connectionString = process.env.URI || "";
 //console.log(process.env.ATLAS_URI);
 const client = new MongoClient(connectionString);
 

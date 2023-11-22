@@ -22,12 +22,12 @@ This Media Post Editor application,provides functionality for managing users and
 
 ## Example Usage
 * Add a new user
- `POST http://localhost:3500/users
+ ```POST http://localhost:3500/users
  Content-Type: application/json
 
 {
 "username": "Bob", "email": "bob@emfh.io"
-}`
+}```
 
 
 

@@ -9,8 +9,7 @@ const userSchema = new mongoose.Schema({
     },
     email: {
         type:String,
-        required:true,
-        unique: true //validation
+        required:true//validation
       },
   });
   const User = mongoose.model('User', userSchema);

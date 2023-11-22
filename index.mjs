@@ -12,6 +12,9 @@ app.use(express.json())
 
 app.use("/",routes); //routes
 
+app.use((err,req,res,next)=>{ //error handling
+res.status(500).send("Error");
+})
 app.listen(PORT, () =>{
     console.log(`Server on port: ${PORT}`);
 })

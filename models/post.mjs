@@ -37,9 +37,7 @@ const postSchema = new mongoose.Schema({
 //validator function for URL validation
 function isURL(value) {
   const urlRegex =
-    /^(http|ftp|https):\/\/[a-zA-Z0-9\-._~:/?#[\]@!$&'()*+,;=]+$/;
-  //const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/; allows special characters
-  //console.log(value);
+    /^(http|ftp|https):\/\/[a-zA-Z0-9\-._~:/?#[\]@!$&'()*+,;=]+$/; // Regex to validate the media field
   return urlRegex.test(value);
 }
 

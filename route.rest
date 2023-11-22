@@ -1,0 +1,35 @@
+
+###
+POST http://localhost:3500/users
+Content-Type: application/json
+
+{
+    "username": "Isha",
+    "email": "isha@emfh.io"
+}
+###
+
+GET http://localhost:3500/655e7553108246f9a218798c
+###
+
+POST http://localhost:3500/users/655e7553108246f9a218798c/posts
+Content-Type: application/json
+
+{
+    "content": "Trial 18",
+    "media": "http://www.alex.io",
+    "title": "Carousel",
+    "description": "content related to holidays carousel"
+}
+###
+PATCH http://localhost:3500/users/655e7553108246f9a218798c/posts/655e7583108246f9a2187990
+Content-Type: application/json
+
+{
+    "content": "Updating Trail 18 ",
+    "media": "http://www.alex.io",
+    "title": "Quotes Media content has been updated throuh Patch trial 18",
+    "description": "content related to gratefulness thankfulness quotes"
+}
+###
+DELETE http://localhost:3500/655e7431ef15ac407eab1b93

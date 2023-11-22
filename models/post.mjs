@@ -30,7 +30,7 @@ const postSchema = new mongoose.Schema({
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
+    ref: "User", //userschema reference 
     required: true,
   },
 });
@@ -39,7 +39,7 @@ function isURL(value) {
   const urlRegex =
     /^(http|ftp|https):\/\/[a-zA-Z0-9\-._~:/?#[\]@!$&'()*+,;=]+$/;
   //const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/; allows special characters
-  console.log(value);
+  //console.log(value);
   return urlRegex.test(value);
 }
 

@@ -47,7 +47,7 @@ Content-Type: application/json
 ```
 
 * Update an existing post 
-``
+```
 PATCH http://localhost:3500/users/655e7553108246f9a218798c/posts/655e7583108246f9a2187990
 Content-Type: application/json
 
@@ -57,7 +57,7 @@ Content-Type: application/json
     "title": "Quotes",
     "description": "Quotes Media content has been updated throuh Patch trial 18"
 }
-``
+```
 
 * Delete an user 
 `DELETE http://localhost:3500/655e7431ef15ac407eab1b93`

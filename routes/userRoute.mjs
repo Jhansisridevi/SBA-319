@@ -91,6 +91,7 @@ router.patch("/users/:userId/posts/:postId", async (req, res) => {
     res.status(500).json({ error: "Error updating post" });
   }
 });
+
 // DELETE - an user 
 router.delete("/:id", async (req, res) => {
   const { id } = req.params;
